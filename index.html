@@ -1,1 +1,397 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bambu Lab | Магазин 3D-принтеров и аксессуаров</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header id="header">
+        <div class="container header-container">
+            <div class="logo">
+                <div class="logo-icon"><i class="fas fa-print"></i></div>
+                <div class="logo-text">Bambu<span>Lab</span></div>
+            </div>
+            
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="#main-banner">Главная</a></li>
+                    <li><a href="#3d-printers">Принтеры</a></li>
+                    <li><a href="#materials">Материалы</a></li>
+                    <li><a href="#accessories">Аксессуары</a></li>
+                    <li><a href="#advantages">Преимущества</a></li>
+                    <li><a href="#footer">Контакты</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-icons">
+                <a href="#" id="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+                <a href="#" id="user-icon"><i class="fas fa-user"></i></a>
+                <a href="#" id="search-icon"><i class="fas fa-search"></i></a>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Главный баннер -->
+    <section id="main-banner">
+        <div class="container">
+            <div class="banner-content">
+                <h1 class="banner-title">Инновационные 3D-принтеры Bambu Lab</h1>
+                <p class="banner-subtitle">Самые быстрые и точные 3D-принтеры для профессионалов и энтузиастов. Печатайте быстрее, печатайте лучше.</p>
+                <a href="#3d-printers" class="btn" id="catalog-btn">Смотреть каталог</a>
+                <a href="#advantages" class="btn btn-secondary" id="advantages-btn">Узнать больше</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Раздел с 3D-принтерами -->
+    <section id="3d-printers">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">3D-принтеры</h2>
+                <a href="#" class="btn-outline" id="view-all-printers">Все принтеры →</a>
+            </div>
+            
+            <div class="products-grid">
+                <!-- Карточка товара 1 -->
+                <div class="product-card" id="product-1">
+                    <div class="product-badge">ХИТ</div>
+                    <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Bambu Lab X1 Carbon" class="product-img">
+                    <div class="product-info">
+                        <div class="product-tags">
+                            <span class="product-tag new">Новинка</span>
+                            <span class="product-tag">CoreXY</span>
+                        </div>
+                        <h3 class="product-title">Bambu Lab X1-Carbon Combo</h3>
+                        <p class="product-description">Флагманская модель с системой активного охлаждения, LiDAR-сканированием и камерой для мониторинга печати.</p>
+                        <div class="product-price">
+                            <span class="old-price">169 999 ₽</span>
+                            149 999 ₽
+                        </div>
+                        <ul class="product-features">
+                            <li><i class="fas fa-check"></i> Объем: 256×256×256 мм</li>
+                            <li><i class="fas fa-check"></i> Скорость: до 500 мм/с</li>
+                            <li><i class="fas fa-check"></i> Материалы: PLA, PETG, ABS, PA, PC</li>
+                        </ul>
+                        <a href="#" class="btn" id="product-1-btn">В корзину</a>
+                    </div>
+                </div>
+                
+                <!-- Карточка товара 2 -->
+                <div class="product-card" id="product-2">
+                    <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Bambu Lab P1P" class="product-img">
+                    <div class="product-info">
+                        <div class="product-tags">
+                            <span class="product-tag">Профессиональный</span>
+                            <span class="product-tag">CoreXY</span>
+                        </div>
+                        <h3 class="product-title">Bambu Lab P1P</h3>
+                        <p class="product-description">Профессиональный принтер с открытой системой для работы с различными материалами.</p>
+                        <div class="product-price">99 999 ₽</div>
+                        <ul class="product-features">
+                            <li><i class="fas fa-check"></i> Объем: 256×256×256 мм</li>
+                            <li><i class="fas fa-check"></i> Скорость: до 350 мм/с</li>
+                            <li><i class="fas fa-check"></i> Материалы: PLA, PETG, ABS, TPU</li>
+                        </ul>
+                        <a href="#" class="btn" id="product-2-btn">В корзину</a>
+                    </div>
+                </div>
+                
+                <!-- Карточка товара 3 -->
+                <div class="product-card" id="product-3">
+                    <div class="product-badge">НОВИНКА</div>
+                    <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Bambu Lab A1 mini" class="product-img">
+                    <div class="product-info">
+                        <div class="product-tags">
+                            <span class="product-tag new">Для начинающих</span>
+                            <span class="product-tag">Компактный</span>
+                        </div>
+                        <h3 class="product-title">Bambu Lab A1 mini</h3>
+                        <p class="product-description">Компактный принтер для начинающих с простым управлением и высоким качеством печати.</p>
+                        <div class="product-price">64 999 ₽</div>
+                        <ul class="product-features">
+                            <li><i class="fas fa-check"></i> Объем: 180×180×180 мм</li>
+                            <li><i class="fas fa-check"></i> Скорость: до 250 мм/с</li>
+                            <li><i class="fas fa-check"></i> Материалы: PLA, PETG</li>
+                        </ul>
+                        <a href="#" class="btn" id="product-3-btn">В корзину</a>
+                    </div>
+                </div>
+                
+                <!-- Карточка товара 4 -->
+                <div class="product-card" id="product-4">
+                    <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Bambu Lab X1" class="product-img">
+                    <div class="product-info">
+                        <div class="product-tags">
+                            <span class="product-tag">Флагман</span>
+                            <span class="product-tag">CoreXY</span>
+                        </div>
+                        <h3 class="product-title">Bambu Lab X1</h3>
+                        <p class="product-description">Мощный принтер с системой активного охлаждения для профессионального использования.</p>
+                        <div class="product-price">
+                            <span class="old-price">139 999 ₽</span>
+                            119 999 ₽
+                        </div>
+                        <ul class="product-features">
+                            <li><i class="fas fa-check"></i> Объем: 256×256×256 мм</li>
+                            <li><i class="fas fa-check"></i> Скорость: до 500 мм/с</li>
+                            <li><i class="fas fa-check"></i> Материалы: PLA, PETG, ABS, PA</li>
+                        </ul>
+                        <a href="#" class="btn" id="product-4-btn">В корзину</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Раздел с материалами для печати -->
+    <section id="materials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Материалы для печати</h2>
+                <a href="#" class="btn-outline" id="view-all-materials">Все материалы →</a>
+            </div>
+            
+            <div class="products-grid">
+                <!-- Материал 1 -->
+                <div class="product-card" id="material-1">
+                    <div class="material-color" style="background-color: #4CAF50;"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">PLA Bambu Lab</h3>
+                        <p class="product-description">Биоразлагаемый пластик для легкой и качественной печати. Идеален для начинающих.</p>
+                        <div class="product-price">1 499 ₽ / катушка</div>
+                        <ul class="product-features">
+                            <li><i class="fas fa-check"></i> Цвет: Зеленый</li>
+                            <li><i class="fas fa-check"></i> Вес: 1 кг</li>
+                            <li><i class="fas fa-check"></i> Диаметр: 1.75 мм</li>
+                        </ul>
+                        <a href="#" class="btn" id="material-1-btn">В корзину</a>
+                    </div>
+                </div>
+                
+                <!-- Материал 2 -->
+                <div class="product-card" id="material-2">
+                    <div class="material-color" style="background-color: #2196F3;"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">PETG-CF Bambu Lab</h3>
+                        <p class="product-description">Прочный материал с углеродным волокном для деталей с высокой прочностью.</p>
+                        <div class="product-price">3 999 ₽ / катушка</div>
+                        <ul class="product-features">
+                            <li><i class="fas fa-check"></i> Цвет: Синий</li>
+                            <li><i class="fas fa-check"></i> Вес: 0.5 кг</li>
+                            <li><i class="fas fa-check"></i> Диаметр: 1.75 мм</li>
+                        </ul>
+                        <a href="#" class="btn" id="material-2-btn">В корзину</a>
+                    </div>
+                </div>
+                
+                <!-- Материал 3 -->
+                <div class="product-card" id="material-3">
+                    <div class="material-color" style="background-color: #FF5722;"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">ABS Bambu Lab</h3>
+                        <p class="product-description">Прочный и термостойкий материал для функциональных деталей и прототипов.</p>
+                        <div class="product-price">2 499 ₽ / катушка</div>
+                        <ul class="product-features">
+                            <li><i class="fas fa-check"></i> Цвет: Оранжевый</li>
+                            <li><i class="fas fa-check"></i> Вес: 1 кг</li>
+                            <li><i class="fas fa-check"></i> Диаметр: 1.75 мм</li>
+                        </ul>
+                        <a href="#" class="btn" id="material-3-btn">В корзину</a>
+                    </div>
+                </div>
+                
+                <!-- Материал 4 -->
+                <div class="product-card" id="material-4">
+                    <div class="material-color" style="background-color: #9C27B0;"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">PAHT-CF Bambu Lab</h3>
+                        <p class="product-description">Высокотемпературный нейлон с углеродным волокном для промышленных применений.</p>
+                        <div class="product-price">5 999 ₽ / катушка</div>
+                        <ul class="product-features">
+                            <li><i class="fas fa-check"></i> Цвет: Фиолетовый</li>
+                            <li><i class="fas fa-check"></i> Вес: 0.5 кг</li>
+                            <li><i class="fas fa-check"></i> Диаметр: 1.75 мм</li>
+                        </ul>
+                        <a href="#" class="btn" id="material-4-btn">В корзину</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Раздел с аксессуарами -->
+    <section id="accessories">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Аксессуары и комплектующие</h2>
+                <a href="#" class="btn-outline" id="view-all-accessories">Все аксессуары →</a>
+            </div>
+            
+            <div class="products-grid">
+                <!-- Аксессуар 1 -->
+                <div class="product-card" id="accessory-1">
+                    <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="AMS" class="product-img">
+                    <div class="product-info">
+                        <h3 class="product-title">AMS (Automatic Material System)</h3>
+                        <p class="product-description">Система автоматической подачи материалов для многоцветной печати.</p>
+                        <div class="product-price">34 999 ₽</div>
+                        <ul class="product-features">
+                            <li><i class="fas fa-check"></i> До 4 материалов одновременно</li>
+                            <li><i class="fas fa-check"></i> Автоматическое переключение</li>
+                            <li><i class="fas fa-check"></i> Сушка филамента</li>
+                        </ul>
+                        <a href="#" class="btn" id="accessory-1-btn">В корзину</a>
+                    </div>
+                </div>
+                
+                <!-- Аксессуар 2 -->
+                <div class="product-card" id="accessory-2">
+                    <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Стол для печати" class="product-img">
+                    <div class="product-info">
+                        <div class="product-tags">
+                            <span class="product-tag hot">ХИТ</span>
+                        </div>
+                        <h3 class="product-title">Стол с подогревом Textured PEI</h3>
+                        <p class="product-description">Сменная платформа для печати с текстурированной поверхностью PEI.</p>
+                        <div class="product-price">5 999 ₽</div>
+                        <ul class="product-features">
+                            <li><i class="fas fa-check"></i> Легкое снятие моделей</li>
+                            <li><i class="fas fa-check"></i> Текстурированная поверхность</li>
+                            <li><i class="fas fa-check"></i> Подогрев до 120°C</li>
+                        </ul>
+                        <a href="#" class="btn" id="accessory-2-btn">В корзину</a>
+                    </div>
+                </div>
+                
+                <!-- Аксессуар 3 -->
+                <div class="product-card" id="accessory-3">
+                    <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Сопла" class="product-img">
+                    <div class="product-info">
+                        <h3 class="product-title">Набор сменных сопел</h3>
+                        <p class="product-description">Набор из 5 сменных сопел разных диаметров для различных типов печати.</p>
+                        <div class="product-price">3 499 ₽</div>
+                        <ul class="product-features">
+                            <li><i class="fas fa-check"></i> Диаметры: 0.2, 0.4, 0.6, 0.8 мм</li>
+                            <li><i class="fas fa-check"></i> Износостойкое покрытие</li>
+                            <li><i class="fas fa-check"></i> Быстрая замена</li>
+                        </ul>
+                        <a href="#" class="btn" id="accessory-3-btn">В корзину</a>
+                    </div>
+                </div>
+                
+                <!-- Аксессуар 4 -->
+                <div class="product-card" id="accessory-4">
+                    <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Камера" class="product-img">
+                    <div class="product-info">
+                        <h3 class="product-title">Камера для мониторинга</h3>
+                        <p class="product-description">HD камера для удаленного наблюдения за процессом печати.</p>
+                        <div class="product-price">7 999 ₽</div>
+                        <ul class="product-features">
+                            <li><i class="fas fa-check"></i> Full HD разрешение</li>
+                            <li><i class="fas fa-check"></i> Ночной режим</li>
+                            <li><i class="fas fa-check"></i> Облачная запись</li>
+                        </ul>
+                        <a href="#" class="btn" id="accessory-4-btn">В корзину</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Преимущества -->
+    <section id="advantages">
+        <div class="container">
+            <h2 class="section-title">Почему Bambu Lab?</h2>
+            
+            <div class="advantages-grid">
+                <div class="advantage-card" id="advantage-1">
+                    <div class="advantage-icon"><i class="fas fa-bolt"></i></div>
+                    <h3 class="advantage-title">Высокая скорость</h3>
+                    <p>Наши принтеры печатают в 5-10 раз быстрее традиционных 3D-принтеров без потери качества.</p>
+                </div>
+                
+                <div class="advantage-card" id="advantage-2">
+                    <div class="advantage-icon"><i class="fas fa-tachometer-alt"></i></div>
+                    <h3 class="advantage-title">Точность</h3>
+                    <p>Технология CoreXY и система автоматической калибровки обеспечивают высочайшую точность печати.</p>
+                </div>
+                
+                <div class="advantage-card" id="advantage-3">
+                    <div class="advantage-icon"><i class="fas fa-palette"></i></div>
+                    <h3 class="advantage-title">Мультицветная печать</h3>
+                    <p>Система AMS позволяет печатать несколькими цветами и материалами в одной модели.</p>
+                </div>
+                
+                <div class="advantage-card" id="advantage-4">
+                    <div class="advantage-icon"><i class="fas fa-cloud"></i></div>
+                    <h3 class="advantage-title">Облачный мониторинг</h3>
+                    <p>Управляйте печатью и следите за процессом из любой точки мира через приложение Bambu Studio.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Форма подписки -->
+    <section id="newsletter">
+        <div class="container">
+            <h2 class="newsletter-title">Будьте в курсе новинок</h2>
+            <p class="newsletter-subtitle">Подпишитесь на рассылку, чтобы первыми узнавать о новых продуктах, акциях и специальных предложениях от Bambu Lab.</p>
+            
+            <form class="subscribe-form" id="subscribe-form">
+                <input type="email" class="email-input" id="email-input" placeholder="Введите ваш email" required>
+                <button type="submit" class="subscribe-btn" id="subscribe-btn">Подписаться</button>
+            </form>
+        </div>
+    </section>
+    
+    <!-- Подвал -->
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>Bambu Lab</h3>
+                    <p>Производитель инновационных 3D-принтеров для профессионалов и энтузиастов. Мы делаем 3D-печать быстрее, проще и доступнее.</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Категории</h3>
+                    <ul class="footer-links">
+                        <li><a href="#3d-printers">3D-принтеры</a></li>
+                        <li><a href="#materials">Материалы для печати</a></li>
+                        <li><a href="#accessories">Аксессуары</a></li>
+                        <li><a href="#advantages">Преимущества</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Помощь</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Доставка и оплата</a></li>
+                        <li><a href="#">Гарантия и возврат</a></li>
+                        <li><a href="#">Техподдержка</a></li>
+                        <li><a href="#">Частые вопросы</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Контакты</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> Москва, ул. Технологическая, 12</li>
+                        <li><i class="fas fa-phone"></i> 8 (800) 555-35-35</li>
+                        <li><i class="fas fa-envelope"></i> info@bambulab.ru</li>
+                        <li><i class="fas fa-clock"></i> Пн-Пт: 9:00-18:00</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; © 2026 DrOmA Corp. Все права защищены.©</p>
 
+        </div>
+    </footer>
+</body>
+</html>
