@@ -1,8 +1,12 @@
 'use strict';
 let but = document.querySelectorAll('.btn'); //кнопки
+
 function change() {
-    but.forEach(but =>
-        but.classList.toggle('.btnon') //смена класса
-    );
+    but.forEach(b => {  //для всех применение
+        b.addEventListener('click', function() { //евентлистенер
+            b.classList.toggle('btnon');
+        });
+    });
 }
-change()
+
+change();
