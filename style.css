@@ -21,6 +21,10 @@ body {
     background-color: #f5f7fa;
 }
 
+.btnon{
+    background-color: var(--light-color);
+    border-color: var(--primary-color);
+}
 a {
     text-decoration: none;
     color: inherit;
