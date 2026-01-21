@@ -1,5 +1,8 @@
 'use strict';
 let but = document.querySelectorAll('.btn'); //кнопки
-but.forEach(but => 
-    but.classList.toggle('.btnon') //смена класса
-);
+function change() {
+    but.forEach(but =>
+        but.classList.toggle('.btnon') //смена класса
+    );
+}
+change()
