@@ -1,12 +1,30 @@
 'use strict';
-let but = document.querySelectorAll('.btn'); //кнопки
+let cart = [];
 
-function change(event) {  // добавил параметр event
-    but.forEach(b => {
-        b.classList.toggle('btnon');
-    });
-}
+document.getElementById('subscribe-form').onsubmit = function (e) {
+    e.preventDefault();
+    alert('Подписка оформлена');
+};
 
-but.forEach(btn => {
-    btn.addEventListener('click', change);
+document.querySelectorAll('.btn').forEach(btn => {
+    if (btn.textContent.includes('В корзину')) {
+        btn.onclick = function () {
+            this.textContent = 'Добавлено';
+            this.style.background = 'gray';
+        };
+    }
 });
+
+document.querySelectorAll('nav a').forEach(link => {
+    link.onclick = function () {
+        document.querySelectorAll('nav a').forEach(l => l.style.color = '');
+        this.style.color = 'red';
+    };
+});
+
+window.onload = function () {
+    if (localStorage.getItem('cart')) {
+        cart = JSON.parse(localStorage.getItem('cart'));
+    }
+    localStorage.setItem('cart', JSON.stringify(cart));
+};
